@@ -1,0 +1,19 @@
+.flowchart {
+  display: flex;
+  background: #ececec;
+}
+
+.draggable-component {
+  width: 25%;
+  overflow: auto;
+  margin: 20px;
+  min-height: 100vh;
+  background: #e1e1e1;
+  box-shadow: 0px 6px 17px -6px black;
+  border-radius: 1px;
+}
+
+.dropping-component {
+  width: 75%;
+  min-height: 100vh;
+}
