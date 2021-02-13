@@ -12,17 +12,54 @@ const NODE_VIEW = {
 
 // Creating JSON for Scene Node - which displays in sidebar.
 const NEW_SCENES_NODE = [
-  { name: "node_1", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 1 },
-  { name: "node_2", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 2 },
-  { name: "node_3", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 3 },
-  { name: "node_4", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 4 },
-  { name: "node_5", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 5 },
-  { name: "node_6", nodeView: NODE_VIEW.DEFAULT_NODE, type: "input", id: 6 },
   {
-    name: "node_7",
+    name: "node_1",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "input",
+    id: 1,
+    title: "Input Node"
+  },
+  {
+    name: "node_2",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "output",
+    id: 2,
+    title: "Output Node"
+  },
+  {
+    name: "node_3",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "default",
+    id: 3,
+    title: "Default Node"
+  },
+  {
+    name: "node_4",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "input",
+    id: 4,
+    title: "Input Node"
+  },
+  {
+    name: "node_5",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "output",
+    id: 5,
+    title: "Output Node"
+  },
+  {
+    name: "node_6",
+    nodeView: NODE_VIEW.DEFAULT_NODE,
+    type: "inputNode",
+    id: 6,
+    title: "Default Node"
+  },
+  {
+    name: "node_cast_7",
     nodeView: NODE_VIEW.DIAMOND_NODE,
-    type: "diamondInput",
-    id: 7
+    type: "diamondNode",
+    id: 7,
+    title: "Diamond Node"
   }
 ];
 
@@ -32,49 +69,57 @@ const SCENES_IN_CAST = [
     name: "node_cast_1",
     nodeView: NODE_VIEW.NODE_GREY,
     type: "input",
-    id: 1
+    id: 1,
+    title: "Input Grey Node"
   },
   {
     name: "node_cast_2",
     nodeView: NODE_VIEW.NODE_SAFFRON,
-    type: "input",
-    id: 2
+    type: "default",
+    id: 2,
+    title: "Default Node"
   },
   {
     name: "node_cast_3",
     nodeView: NODE_VIEW.NODE_GREEN,
-    type: "input",
-    id: 3
+    type: "inputNode",
+    id: 3,
+    title: "Green Node"
   },
   {
     name: "node_cast_4",
     nodeView: NODE_VIEW.DEFAULT_NODE,
-    type: "input",
-    id: 4
+    type: "inputNode",
+    id: 4,
+    title: "Custom Input Node"
   },
   {
     name: "node_cast_5",
     nodeView: NODE_VIEW.DEFAULT_NODE,
     type: "input",
-    id: 5
+    id: 5,
+    title: "Input Node"
   },
   {
     name: "node_cast_6",
     nodeView: NODE_VIEW.DIAMOND_YELLOW,
-    type: "input",
-    id: 6
+    type: "diamondNode",
+    id: 6,
+    title: "Diamond Yellow Node"
   },
   {
     name: "node_cast_7",
     nodeView: NODE_VIEW.DIAMOND_ORANGE,
-    type: "diamondInput",
-    id: 7
+    type: "diamondNode",
+    id: 7,
+    title: "Diamond Orange Node"
   },
   {
     name: "node_cast_8",
     nodeView: NODE_VIEW.DIAMOND_PINK,
-    type: "diamondInput",
-    id: 8
+    type: "diamondNode",
+    id: 8,
+    title: "Diamond Pink Node"
   }
 ];
 
